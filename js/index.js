@@ -41,12 +41,14 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// NAV Items
 const navItems = ['Services', 'Product', 'Vision', 'Features', 'About', 'Contact'];
 const navSetup = document.querySelectorAll('nav a');
 navSetup.forEach(( currentValue, index) => {
   currentValue.textContent = siteContent.nav[`nav-item-${index + 1}`];
 });
 
+// CTA 
 let headImg = document.getElementById('cta-img');
 headImg.setAttribute('src', "img/header-img.png");
 
@@ -55,6 +57,27 @@ midImg.setAttribute('src', 'img/mid-page-accent.jpg');
 
 const mainHeader = document.querySelector('h1');
 mainHeader.textContent = 'DOM Is Awesome';
-console.log(topHeader);
-const ctaText = document.querySelector('.cta-text h1');
-ctaContent.append(topHeader);
+
+const btnText = document.querySelector('.cta-text > button');
+btnText.textContent = 'Get Started!';
+
+// MAIN CONTENT
+const featuresHeading = document.querySelector('.text-content > h4');
+featuresHeading.textContent = 'Features';
+
+const featuresContent = document.querySelector('.text-content > p');
+featuresContent.textContent = '"Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+const aboutHeading = document.querySelector('.text-content > h4');
+aboutHeading.textContent = 'Features';
+
+
+
+// CONTACT
+const contactHeading = document.querySelector('.contact > h4');
+contactHeading.textContent = 'Contact';
+
+// FOOTER
+
+const copyrice = document.querySelector('footer > p');
+copyrice.textContent = 'Copyright Great Idea! 2018';

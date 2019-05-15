@@ -62,20 +62,34 @@ const btnText = document.querySelector('.cta-text > button');
 btnText.textContent = 'Get Started!';
 
 // MAIN CONTENT
-const featuresHeading = document.querySelector('.text-content > h4');
-featuresHeading.textContent = 'Features';
+const textContentHeading = document.querySelectorAll('.text-content h4');
+textContentHeading[0].textContent = 'Features';
+textContentHeading[1].textContent = 'About';
 
-const featuresContent = document.querySelector('.text-content > p');
-featuresContent.textContent = '"Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
-const aboutHeading = document.querySelector('.text-content > h4');
-aboutHeading.textContent = 'Features';
+const textContentP = document.querySelectorAll('.text-content p');
+textContentP[0].textContent = '"Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+textContentP[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
+const bottomContentHeading = document.querySelectorAll('.bottom-content h4');
+bottomContentHeading[0].textContent = 'Services'
+bottomContentHeading[1].textContent = 'Product'
+bottomContentHeading[2].textContent = 'Vision'
+
+const bottomContent = document.querySelectorAll('.bottom-content p');
+bottomContent[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+bottomContent[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+bottomContent[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
 
 // CONTACT
 const contactHeading = document.querySelector('.contact > h4');
 contactHeading.textContent = 'Contact';
+
+const contactContent = document.querySelectorAll('.contact p')
+contactContent[0].textContent = '123 Way 456 Street Somewhere, USA'
+contactContent[1].textContent = '1 (888) 888-8888'
+contactContent[2].textContent = 'sales@greatidea.io'
 
 // FOOTER
 
